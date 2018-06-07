@@ -42,6 +42,17 @@ These permissions may include, but not necessarily be limited to, the following:
 * storage.admin
 * dns.admin
 
+These permissions are also referenced within the deployment for the serviceAccount.
+
+* logging.write
+* monitoring.write
+* cloud.useraccounts.readonly
+* servicecontrol
+* service.management
+* devstorage.read_only
+* compute
+* trace.append
+
 During deployment using the template here, the following permissions were used:
 
 * compute.addresses.create
@@ -87,7 +98,9 @@ During deployment using the template here, the following permissions were used:
 * deploymentmanager.deployments.update
 * dns.managedZones.create
 * dns.managedZones.delete
-* logging.sinks.create
 * monitoring.groups.create
 * storage.buckets.create
 * storage.buckets.delete
+* storage.buckets.getIamPolicy
+* storage.buckets.setIamPolicy
+* storage.buckets.update
