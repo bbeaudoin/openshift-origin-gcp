@@ -87,7 +87,9 @@ During deployment using the template here, the following permissions were used:
 * deploymentmanager.deployments.update
 * dns.managedZones.create
 * dns.managedZones.delete
-* logging.sinks.create
 * monitoring.groups.create
 * storage.buckets.create
 * storage.buckets.delete
+* storage.buckets.getIamPolicy
+* storage.buckets.setIamPolicy
+* storage.buckets.update
